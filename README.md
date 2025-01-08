@@ -3,7 +3,8 @@
 🚀Live Link: https://custom-table-react.vercel.app/
 
 🚀How to Run the Project
-Prerequisites:
+
+📝 Prerequisites:
 
 1. Node.js and npm installed on your system.
 2. A modern browser (preferably Chrome).
@@ -73,6 +74,8 @@ Implementation Details:
    - Final image generation.
 
 📚 References
+
 -API Documentation:
-Base API: https://api.razzakfashion.com
-Example Query: https://api.razzakfashion.com/?paginate=5&search=Kiehn
+
+- Base API: https://api.razzakfashion.com
+- Example Query: https://api.razzakfashion.com/?paginate=5&search=Kiehn
