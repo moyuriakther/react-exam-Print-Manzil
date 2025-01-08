@@ -15,7 +15,7 @@
 4. Clone the repository:
 
    - git clone https://github.com/moyuriakther/react-exam-Print-Manzil.git
-   - cd custom-table-react
+   - cd react-exam-Print-Manzil-main
 
 5. Install dependencies:
    - npm install
