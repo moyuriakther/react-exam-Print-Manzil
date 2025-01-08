@@ -23,7 +23,7 @@
    - npm start
 7. Open the application in your browser at http://localhost:3000.
 
-📋Project Overview
+📋Project Overview:
 This project is a submission for the React Online Test conducted by Print Manzil. The test involves implementing two tasks:
 
 1. Custom Table: A table component with search and pagination functionality.
