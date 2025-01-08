@@ -62,15 +62,15 @@ Implementation Details:
 ✨ Project Features
 
 1. Custom Table
-   1.1 Dynamic data fetching from the API.
-   1.2 Search functionality to filter data.
-   1.3 Pagination to navigate through data.
-   1.4 Row selection with checkboxes.
+   - Dynamic data fetching from the API.
+   - Search functionality to filter data.
+   - Pagination to navigate through data.
+   - Row selection with checkboxes.
 2. T-Shirt Logo Positioning
-   2.1 User-friendly interface for uploading logos.
-   2.2 Drag-and-drop functionality for easy positioning.
-   2.3 Logo resizing while maintaining aspect ratio.
-   2.4 Final image generation.
+   - User-friendly interface for uploading logos.
+   - Drag-and-drop functionality for easy positioning.
+   - Logo resizing while maintaining aspect ratio.
+   - Final image generation.
 
 📚 References
 -API Documentation:
