@@ -117,3 +117,15 @@
   width: 16px;
   height: 16px;
 }
+/* loading and error state */
+.loading-state,
+.error-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16rem;
+}
+
+.error-state {
+  color: #ef4444;
+}

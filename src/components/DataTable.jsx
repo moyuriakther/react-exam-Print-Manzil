@@ -25,7 +25,7 @@ const [data, setData] = useState([])
         const response = await fetch(url);
      
         if (!response.ok) {
-          throw new Error('Failed to fetch data')
+          throw new Error('Failed to fetch data! Please Use Allow CORS: Access-Control-Allow-Origin Chrome extension to see data')
         }
         const jsonData = await response.json()
         const dataArray = jsonData?.data || []
@@ -41,24 +41,24 @@ const [data, setData] = useState([])
     fetchData()
   }, [searchTerm, rowsPerPage])
 
-    const filteredData = data?.filter(item => {
-    const searchString = searchTerm.toLowerCase()
-    const firstName = item.name?.split(' ')[0]?.toLowerCase() || ''
-    const lastName = item.name?.split(' ')[1]?.toLowerCase() || ''
-    const email = item.email?.toLowerCase() || ''
+  //   const filteredData = data?.filter(item => {
+  //   const searchString = searchTerm.toLowerCase()
+  //   const firstName = item.name?.split(' ')[0]?.toLowerCase() || ''
+  //   const lastName = item.name?.split(' ')[1]?.toLowerCase() || ''
+  //   const email = item.email?.toLowerCase() || ''
 
-    return (
-      firstName.includes(searchString) ||
-      lastName.includes(searchString) ||
-      email.includes(searchString)
-    )
-  })
+  //   return (
+  //     firstName.includes(searchString) ||
+  //     lastName.includes(searchString) ||
+  //     email.includes(searchString)
+  //   )
+  // })
 
     // Calculate pagination
-  const totalPages = Math.ceil(filteredData.length / rowsPerPage)
+  const totalPages = Math.ceil(data?.length / rowsPerPage)
   const startIndex = (currentPage - 1) * rowsPerPage
   const endIndex = startIndex + rowsPerPage
-  const currentData = filteredData.slice(startIndex, endIndex)
+  const currentData = data?.slice(startIndex, endIndex)
 
 
   const toggleSelectAll = () => {
@@ -84,11 +84,11 @@ const [data, setData] = useState([])
   const goToLastPage = () => setCurrentPage(totalPages)
 
   if (loading) {
-    return <div className="flex justify-center items-center h-64">Loading...</div>
+    return <div className="loading-state">Loading...</div>
   }
 
   if (error) {
-    return <div className="flex justify-center items-center h-64 text-red-500">Error: {error}</div>
+    return <div className="error-state">Error: {error}</div>
   }
 
 
@@ -126,7 +126,7 @@ const [data, setData] = useState([])
             </tr>
           </thead>
           <tbody>
-          {currentData?.map((row) => (
+          {data?.map((row) => (
               <tr key={row.id}>
                 <td>
                   <input
@@ -163,7 +163,7 @@ const [data, setData] = useState([])
           </select>
         </div>
         <div className="paginationInfo">
-         {startIndex + 1}-{Math.min(endIndex, filteredData.length)} of {filteredData.length}
+         {startIndex + 1}-{Math.min(endIndex, data?.length)} of {data?.length}
         </div>
         <div className="paginationControls">
           <button
