@@ -47,10 +47,10 @@ Implementation Details:
 2️⃣ Task 2: T-Shirt Logo Positioning
 Requirements:
 
-1.Allow users to upload a logo and position it anywhere on a predefined T-shirt image.
-2.Enable drag-and-drop functionality for logo positioning.
-3.Maintain the logo's aspect ratio during resizing.
-4.Generate a final combined image (T-shirt + logo).
+1. Allow users to upload a logo and position it anywhere on a predefined T-shirt image.
+2. Enable drag-and-drop functionality for logo positioning.
+3. Maintain the logo's aspect ratio during resizing.
+4. Generate a final combined image (T-shirt + logo).
 
 Implementation Details:
 
